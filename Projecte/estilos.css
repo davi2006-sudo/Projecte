@@ -156,7 +156,7 @@ p {
     }
 }
 
-h2 {
+h2, .imagen1 h1, .imagen2 h1, .imagen3 h1 {
     font-family: 'Archivo Black', sans-serif; /* Aplicar la fuente Archivo Black */
     color: #0475B3 !important; /* Color del texto */
     text-align: center; /* Centrar el texto */
@@ -172,41 +172,41 @@ footer {
     width: 90%;
     padding: 20px;}
 
-section.imagen1{
+.imagen1{
     background-color: #F0F0F0;
     border-radius: 20px;
     margin: 0; /* Eliminar márgenes para evitar desplazamientos */
-    padding: auto;
+    padding: 25px;
     max-width: auto;
-    width: 20% ;/* Cambiado a max-width para ser más responsivo */
+    width: 30% ;/* Cambiado a max-width para ser más responsivo */
     height: auto; /* Cambiado a auto para que se ajuste al contenido */
     margin: auto; /* Centrar la sección verticalmente */
     margin-top: 3%;
     margin-left: 10%;
 }
 
-section.imagen2{
+.imagen2{
 
     background-color: #F0F0F0;
     border-radius: 20px;
     margin: 0; /* Eliminar márgenes para evitar desplazamientos */
-    padding: auto;
+    padding: 25px;
     max-width: auto;
-    width: 20% ;/* Cambiado a max-width para ser más responsivo */
+    width: 30% ;/* Cambiado a max-width para ser más responsivo */
     height: auto; /* Cambiado a auto para que se ajuste al contenido */
-    margin: auto; /* Centrar la sección verticalmente */
+    margin: 40px; /* Centrar la sección verticalmente */
     margin-top: 3%;
 
 }
 
-section.imagen3{
+.imagen3{
 
     background-color: #F0F0F0;
     border-radius: 20px;
     margin: 0; /* Eliminar márgenes para evitar desplazamientos */
-    padding: auto;
+    padding: 25px;
     max-width: auto;
-    width: 20% ;/* Cambiado a max-width para ser más responsivo */
+    width: 30% ;/* Cambiado a max-width para ser más responsivo */
     height: auto; /* Cambiado a auto para que se ajuste al contenido */
     margin: auto; /* Centrar la sección verticalmente */
     margin-top: 3%;
@@ -214,11 +214,47 @@ section.imagen3{
 
 }
 
-.productos{
+.productos {
 
     display: flex;
     flex-direction: row;
+
 }
+
+@media (max-width: 768px) {
+
+    .imagen1, .imagen2, .imagen3 {
+
+        flex: 1 1 45%;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .imagen1, .imagen2, .imagen3 {
+
+        flex: 1 1 100%;
+
+    }
+
+    .productos {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+}
+
+section.imagen1 h1,section.imagen2 h1,section.imagen3 h1{
+
+color: #0475B3;
+font-family: 'Bakbak One', sans-serif;
+
+}
+
 
 img.bebidas{
 
@@ -470,3 +506,132 @@ color: #FFEC89;
     align-items: center; /* Centrar el texto verticalmente */
     padding: 10px; /* Espaciado interno para el botón */
 }
+
+
+
+
+
+
+
+.fila1, .fila2, .fila3 {
+
+
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: auto;
+ }
+ 
+ 
+ .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-family: arial;
+    width: 100%;
+    flex: 1 1 30%;
+    margin: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+ 
+ .text {
+ 
+ 
+    padding: 32px;
+ 
+ 
+ }
+
+.card button {
+    background-color: #FFEC89; /* Color de fondo amarillo */
+    color: #0475B3; /* Color del texto azul */
+    width: 50%; /* Ancho del botón */
+    height: auto; /* Altura automática */
+    border: none;
+    border-radius: 10px; /* Bordes redondeados (opcional) */
+    font-size: 1.5rem; /* Tamaño de la fuente (ajusta según sea necesario) */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+    margin: auto; /* Centrar el botón en su contenedor */
+    display: flex; /* Habilitar flexbox para centrar el texto */
+    justify-content: center; /* Centrar el texto horizontalmente */
+    align-items: center; /* Centrar el texto verticalmente */
+    padding: 10px; /* Espaciado interno para el botón */
+  }
+   .card button:hover {
+    opacity: 0.7;
+  }
+ 
+ 
+ .card h1 {
+
+    color: #0475B3;
+    font-family: 'Bakbak One', sans-serif;
+    font-size: 40px;
+ 
+ 
+ }
+
+ 
+ 
+ .fila1, .fila2, .fila3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+ }
+ 
+ 
+ @media (max-width: 768px) {
+  .card {
+      flex: 1 1 45%;
+  }
+  .productesdiv h1 {
+ 
+ 
+    font-size: 100px;
+ 
+ 
+  }
+ }
+ 
+ 
+ @media (max-width: 480px) {
+  .card {
+      flex: 1 1 100%;
+  }
+  .productesdiv h1 {
+ 
+ 
+    font-size: 100px;
+ 
+ 
+  }
+ }
+
+ .total {
+
+    width: 100%;
+
+ }
+ 
+ 
+ .imgdiv {
+ 
+ 
+  margin-bottom: auto;
+  height: auto;
+ 
+ 
+ }
+ 
+ .imgdiv img {
+ 
+ 
+  width: 50%;
+ 
+ 
+ }
+
+ 
