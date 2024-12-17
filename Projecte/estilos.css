@@ -264,17 +264,26 @@ height: 90%;
 
 }
 
-section.titulos{
+.titulos{
 
     background-color: #F0F0F0;
     border-radius: 20px;
     margin: 0; /* Eliminar márgenes para evitar desplazamientos */
     padding: auto;
-    max-width: auto;
-    width: 20% ;/* Cambiado a max-width para ser más responsivo */
-    height: auto; /* Cambiado a auto para que se ajuste al contenido */
+    width: 450px ;/* Cambiado a max-width para ser más responsivo */
     position: relative; /* Cambiar a posición relativa */
     margin: 60px auto; /* Centrar la sección verticalmente */
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+
+}
+
+.titulos h2 {
+
+    width: 100%;
+    margin: auto;
 
 }
 
@@ -310,13 +319,14 @@ margin-bottom: 3%;
 
 display: flex;
 flex-direction: row;
+flex-wrap: wrap;
 
 }
 
 .container-peque1{
 
 background-color: #F0F0F0;
-width: 20%;
+width: 370px;
 border-radius: 20px;
 margin: auto;
 padding: 30px;
@@ -329,7 +339,7 @@ margin-bottom: 3%;
 .container-peque2{
 
 background-color: #F0F0F0;   
-width: 20%;  
+width: 370px;  
 border-radius: 20px;
 margin: auto;
 padding: 30px;
@@ -340,12 +350,55 @@ margin-bottom: 3%;
 .container-peque3{
 
 background-color: #F0F0F0;
-width: 20%;
+width: 370px;
 border-radius: 20px;
 margin: auto;
 padding: 30px;
 margin-right: 10%;
 margin-bottom: 3%;
+
+}
+
+@media (max-width: 768px) {
+
+    .container-grande {
+
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+
+    }
+
+    .container-peque1, .container-peque2, .container-peque3 {
+
+        flex: 1 1 100% !important;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 70%;
+
+    }
+
+}
+
+@media (max-width: 480px) {
+
+   
+    .container-grande {
+
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+
+    }
+
+    .container-peque1, .container-peque2, .container-peque3 {
+
+        flex: 1 1 100% !important;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 70%;
+
+    }
 
 }
 
@@ -635,3 +688,153 @@ color: #FFEC89;
  }
 
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.maximo{
+
+background-color: #F5F5F5;
+width: 70%;
+margin: auto;
+border-radius: 20px;
+padding: 20px;
+
+
+}
+
+/* Cambiar el color y aumentar el tamaño del icono de "anterior" */
+.carousel-control-prev-icon {
+    background-color: #0475B3;  /* Color naranja */
+    width: 50px;                /* Tamaño más grande */
+    height: 40px;               /* Tamaño más grande */
+    border-radius: 50%;         /* Hacerlo redondeado */
+  }
+  
+  /* Cambiar el color y aumentar el tamaño del icono de "siguiente" */
+  .carousel-control-next-icon {
+    background-color: #FFEC89;  /* Color verde */
+    width: 50px;                /* Tamaño más grande */
+    height: 40px;               /* Tamaño más grande */
+    border-radius: 50%;         /* Hacerlo redondeado */
+  }
+  
+
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en pantallas pequeñas */
+  }
+  
+  .product-card {
+    background-color: white;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    margin: 10px;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .product-card h3 {
+    font-size: 20px;
+    color: #2c3e50;
+    margin: 10px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .product-card p {
+    font-size: 16px;
+    color: #3498db;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-card .divider {
+    content: '';
+    display: block;
+    margin-top: 10px;
+    height: 3px;
+    width: 50%;
+    background: #f39c12;
+    margin-bottom: 10px;
+  }
+  
+  /* Ajustes responsivos */
+  @media (max-width: 1024px) {
+    .container {
+      justify-content: space-between;
+    }
+  
+    .product-card {
+      width: 200px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-card {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 20px; /* Agrega un margen entre tarjetas */
+    }
+  
+    body {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-card {
+      width: 100%;
+      max-width: 250px; /* Se ajusta el tamaño máximo de la tarjeta */
+      margin-bottom: 20px; /* Se agrega espacio entre las tarjetas */
+    }
+  
+    .product-card h3 {
+      font-size: 18px; /* Texto más pequeño para pantallas pequeñas */
+    }
+  
+    .product-card p {
+      font-size: 14px; /* Descripción más pequeña */
+    }
+  
+    .product-card img {
+      max-height: 300px; /* Limita la altura de la imagen en móviles */
+    }
+  }
+  
