@@ -112,14 +112,14 @@ li{
 .portfolio {
   padding: 60px 20px;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Archivo Black', sans-serif;
   background-color: #f4f4f9;
 }
 
 /* Título de la sección */
 .portfolio-title {
   font-size: 2.5rem;
-  color: #333;
+  color: #005f9e;
   margin-bottom: 20px;
   font-family: 'Archivo Black',sans-serif;
 }
@@ -215,7 +215,7 @@ li{
 
 /* Botón de "Ver Proyecto" */
 .view-button {
-  background-color: #ff7e5f;
+  background-color: #ffe66b;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -226,7 +226,7 @@ li{
 }
 
 .view-button:hover {
-  background-color: #feb47b;
+  background-color: #005f9e;
 }
 
 /* Responsividad */
@@ -261,27 +261,21 @@ li{
 
 
 
+
+
 /* Estilo general para la sección de capacidades */
 .capacidades {
   padding: 40px 20px;
   background-color: #f4f4f9;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Archivo Black', sans-serif;
   text-align: center;
 }
 
 /* Título principal de capacidades */
 .capacidades-title {
   font-size: 2.5rem;
-  color: #333;
+  color: #005f9e;
   margin-bottom: 20px;
-}
-
-/* Descripción introductoria */
-.capacidades-description p {
-  font-size: 1rem;
-  color: #777;
-  line-height: 1.6;
-  margin-bottom: 30px;
 }
 
 /* Contenedor de la cuadrícula (grid) de tarjetas */
@@ -314,7 +308,6 @@ li{
 /* Icono dentro de la tarjeta */
 .card-icon {
   font-size: 3rem;
-  color: #ff7e5f;
   margin-bottom: 15px;
 }
 
@@ -348,7 +341,7 @@ li{
 }
 
 .card-button {
-  background-color: #ff7e5f;
+  background-color: #ffe66b;
   color: white;
   padding: 12px 25px;
   font-size: 1rem;
@@ -360,7 +353,7 @@ li{
 
 /* Efecto hover para los botones */
 .card-button:hover {
-  background-color: #feb47b;
+  background-color: #005f9e;
   transform: scale(1.05);
 }
 
@@ -372,21 +365,87 @@ li{
 }
 
 
+/* Estilos generales del footer */
+.footer {
+  background-color: #0475B3; /* Fondo oscuro elegante */
+  color: white;
+  padding: 60px 20px;
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  position: relative;
+  z-index: 10;
+}
 
-/* Estilos para el footer */
-footer {
-    background-color: #0475B3;
-    position: relative; /* Cambiar a posición relativa */
-    margin: 20px auto; /* Centrar el footer */
-    border-radius: 20px;
-    width: 90%;
-    padding: 20px;}
+/* Contenedor principal del footer */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
 
-    .foot{
+/* Estilo para cada sección */
+.footer-about, .footer-social, .footer-contact {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
 
-        background-color: #0475B3;
-        font-family: 'Bakbak One', sans-serif; /* Agregada una fuente de respaldo */
-        font-size: 2vw; /* Usar vw para mejor escalabilidad */
-        text-align: center;
-        color: #F5F5F5;
-    }
+/* Títulos de las secciones */
+.footer-about h3, .footer-social h3, .footer-contact h3 {
+  font-size: 1.5rem;
+  color: #ffe875; /* Un color dorado atractivo */
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Bakbak One',sans-serif;
+}
+/* Descripción en About y Contacto */
+.footer-about p, .footer-contact p {
+  font-size: 1rem;
+  color: #aaa;
+  line-height: 1.6;
+}
+/* Estilo para los iconos sociales */
+.footer-social .social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+.social-icon {
+  font-size: 1.8rem;
+  color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.social-icon:hover {
+  transform: scale(1.2); /* Efecto de zoom */
+  background-color: #ffcc00; /* Fondo amarillo dorado */
+  color: #111; /* Cambio de color del icono */
+}
+
+/* Estilo para el pie de página (copyright) */
+.footer-bottom {
+  background-color: #222;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-about, .footer-social, .footer-contact {
+      text-align: center;
+  }
+}

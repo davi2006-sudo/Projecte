@@ -262,6 +262,10 @@ li{
   background-color: #005f9e;
 }
 
+.cta-button.secondary:hover {
+  background-color: #005f9e;
+}
+
 .cta-button:hover {
     transform: scale(1.05);
 }
