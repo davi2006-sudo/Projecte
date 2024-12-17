@@ -85,6 +85,57 @@
       font-size: 20px;
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  nav {
+    background-color: #098DD6;
+    border-radius: 20px;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    font-family: 'Bakbak One', sans-serif; /* Agregada una fuente de respaldo */
+    font-size: 2.5rem; /* Usar rem para mejor escalabilidad */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 10%;
+    top: 22%; /* Ajustar este valor para acercar el nav al header */
+    vertical-align: middle;
+    align-items: center;
+    justify-items: auto;
+    text-align: center;
+    font-style: none;
+    
+}
+
+nav a { /* Suponiendo que los elementos de navegación son enlaces */
+    color: #FFEC89 !important;
+    margin: 0 15px; /* Espaciado horizontal entre los elementos */
+    vertical-align: middle;
+    width: 100%;
+    margin: 40px 40px 30px 30px;
+    text-decoration: none;  
+}
+
+
+
+
+
+
+
+
+
   
 
 * {

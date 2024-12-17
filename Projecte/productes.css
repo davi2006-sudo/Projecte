@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif !important;
+    background-color: #f5e7a5 !important;
+}
+  
+  /* Fondo y estilo del header */
+.barra {
+    background-color: #0475B3;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    width: 100%;
+    margin: auto;
+  }
+  
+  /* Contenedor del logo */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px; /* Tamaño del logo */
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  /* Estilo para el texto del header */
+  .logo-container h1 {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Bakbak One', sans-serif;
+  }
+  
+  /* Estilos de la barra de navegación */
+  .navbar ul {
+    display: flex;
+    list-style: none;
+  }
+
+li{
+    list-style: none;
+    display: inline;
+    
+}
+  
+  .navbar li {
+    margin: 0 20px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: #f9f1a0;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    font-family: 'Archivo Black', sans-serif;
+  }
+  
+  /* Efecto al pasar el mouse sobre los enlaces */
+  .navbar a:hover {
+    color: white;
+  }
+  
+  /* Estilos responsivos */
+  @media (max-width: 768px) {
+    .barra {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar li {
+      margin: 10px 0;
+    }
+  
+    .logo {
+      width: 30px; /* Ajuste de tamaño en pantallas pequeñas */
+    }
+  
+    header h1 {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .barra {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar li {
+      margin: 10px 0;
+    }
+  
+    .logo {
+      width: 30px; /* Ajuste de tamaño en pantallas pequeñas */
+    }
+  
+    header h1 {
+      font-size: 20px;
+    }
+  }
+
+  .titulos{
+    background-color: #0475B3;
+    border-radius: 20px;
+    margin: 0; /* Eliminar márgenes para evitar desplazamientos */
+    padding: auto;
+    width: 450px ;/* Cambiado a max-width para ser más responsivo */
+    position: relative; /* Cambiar a posición relativa */
+    margin: 60px auto; /* Centrar la sección verticalmente */
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+}
+.titulos h2{
+    font-family: 'Archivo Black', sans-serif; /* Aplicar la fuente Archivo Black */
+    text-align: center; /* Centrar el texto */
+    font-size: 40px !important;
+    width: 100%;
+    margin: auto;
+    color: #ffffff !important;
+}
+.maximo{
+    background-color: #58aae0;
+    width: 70%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+/* Cambiar el color y aumentar el tamaño del icono de "anterior" */
+.carousel-control-prev-icon {
+    background-color: #0475B3;  /* Color naranja */
+    width: 50px;                /* Tamaño más grande */
+    height: 40px;               /* Tamaño más grande */
+    border-radius: 50%;         /* Hacerlo redondeado */
+  }
+  
+  /* Cambiar el color y aumentar el tamaño del icono de "siguiente" */
+  .carousel-control-next-icon {
+    background-color: #FFEC89;  /* Color verde */
+    width: 50px;                /* Tamaño más grande */
+    height: 40px;               /* Tamaño más grande */
+    border-radius: 50%;         /* Hacerlo redondeado */
+  }  .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en pantallas pequeñas */
+  }
+  
+  .product-card {
+    background-color: white;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    margin: 10px;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .product-card h3 {
+    font-size: 20px;
+    color: #2c3e50;
+    margin: 10px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .product-card p {
+    font-size: 16px;
+    color: #3498db;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-card .divider {
+    content: '';
+    display: block;
+    margin-top: 10px;
+    height: 3px;
+    width: 50%;
+    background: #f39c12;
+    margin-bottom: 10px;
+  }
+  
+  /* Ajustes responsivos */
+  @media (max-width: 1024px) {
+    .container {
+      justify-content: space-between;
+    }
+  
+    .product-card {
+      width: 200px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .product-card {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 20px; /* Agrega un margen entre tarjetas */
+    }
+  
+    body {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-card {
+      width: 100%;
+      max-width: 250px; /* Se ajusta el tamaño máximo de la tarjeta */
+      margin-bottom: 20px; /* Se agrega espacio entre las tarjetas */
+    }
+  
+    .product-card h3 {
+      font-size: 18px; /* Texto más pequeño para pantallas pequeñas */
+    }
+  
+    .product-card p {
+      font-size: 14px; /* Descripción más pequeña */
+    }
+  
+    .product-card img {
+      max-height: 300px; /* Limita la altura de la imagen en móviles */
+    }
+  }
+
+  /* Estilos para el footer */
+footer {
+    background-color: #0475B3;
+    position: relative; /* Cambiar a posición relativa */
+    margin: 20px auto; /* Centrar el footer */
+    border-radius: 20px;
+    width: 90%;
+    padding: 20px;}
+
+    .foot{
+
+        background-color: #0475B3;
+        font-family: 'Bakbak One', sans-serif; /* Agregada una fuente de respaldo */
+        font-size: 2vw; /* Usar vw para mejor escalabilidad */
+        text-align: center;
+        color: #F5F5F5;
+    }
