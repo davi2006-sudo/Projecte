@@ -30,25 +30,25 @@
 
 <body>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <div class="barra">
-    <div class="logo-container">
-        <img src="logo.png" alt="Logo" class="logo">
-        <h1>MY POWER</h1>
+  <div class="barra">
+      <div class="logo-container">
+          <img src="logo.png" alt="Logo" class="logo">
+          <h1>MY POWER</h1>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="Indice.html">Inicio</a></li>
+            <li><a href="Productes.html">Productos</a></li>
+            <li><a href="Portafoli.html">Portafolio</a></li>
+            <li><a href="Contacte.html">Contacto</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav class="navbar">
-        <ul>
-          <li><a href="Indice.html">Inicio</a></li>
-          <li><a href="Productes.html">Productos</a></li>
-          <li><a href="Portafoli.html">Portafolio</a></li>
-          <li><a href="Contacte.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </div>
 
     <div class="titulos">   
-        <h2>RECOMENDADOS</h2>
+        <h2>DESTACADOS</h2>
      </div>
     
      <div class="maximo">
@@ -68,6 +68,11 @@
           <h3>FRESH LEMON</h3>
           <p>My Power</p>
         </div>
+        <div class="product-card">
+          <img src="disena-un-prototipo-de-lata-de-bebida-energet_2IBeU6n (1).jpg" alt="Fresh Lemon">
+          <h3>FRESH LEMON</h3>
+          <p>My Power</p>
+        </div>
       </div>
     </div>
 
@@ -79,25 +84,6 @@
 
      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <div class="container">
-                <div class="product-card">
-                  <img src="disena-un-prototipo-de-lata-de-bebida-energet_eUnESHv.jpg" alt="Pineberry Rush">
-                  <h3>PINEBERRY RUSH</h3>
-                  <p>My Power</p>
-                </div>
-                <div class="product-card">
-                  <img src="disena-un-prototipo-de-lata-de-bebida-energet_UFpgiYs.jpg" alt="Tropical Punch">
-                  <h3>TROPICAL PUNCH</h3>
-                  <p>My Power</p>
-                </div>
-                <div class="product-card">
-                  <img src="disena-un-prototipo-de-lata-de-bebida-energet_VO3PJ8f.jpg" alt="Fresh Lemon">
-                  <h3>FRESH LEMON</h3>
-                  <p>My Power</p>
-                </div>
-              </div>
-          </div>
           <div class="carousel-item" data-bs-interval="2000">
             <div class="container">
                 <div class="product-card">
@@ -117,6 +103,25 @@
                 </div>
               </div>
           </div>
+          <div class="carousel-item active" data-bs-interval="10000">
+            <div class="container">
+                <div class="product-card">
+                  <img src="disena-un-prototipo-de-lata-de-bebida-energet_eUnESHv.jpg" alt="Pineberry Rush">
+                  <h3>PINEBERRY RUSH</h3>
+                  <p>My Power</p>
+                </div>
+                <div class="product-card">
+                  <img src="disena-un-prototipo-de-lata-de-bebida-energet_UFpgiYs.jpg" alt="Tropical Punch">
+                  <h3>TROPICAL PUNCH</h3>
+                  <p>My Power</p>
+                </div>
+                <div class="product-card">
+                  <img src="disena-un-prototipo-de-lata-de-bebida-energet_VO3PJ8f.jpg" alt="Fresh Lemon">
+                  <h3>FRESH LEMON</h3>
+                  <p>My Power</p>
+                </div>
+              </div>
+          </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -128,12 +133,47 @@
         </button>
       </div>
     </div>
-    <footer>
-        <div class="foot">
-        <h3>Daniel Villalba Marin</h3>
-        <h4>DAW-1  2024</h4>
-        </div>
-    </footer>
+    
+    <footer class="footer">
+
+      <div class="hola">
+          <div class="footer-container">
+      
+              <!-- Sección de Sobre Nosotros -->
+              <div class="footer-about">
+                  <div class="logo-container">
+                      <img src="logo.png" alt="Logo" class="logo">
+                      <h1>MY POWER</h1>
+                    </div>
+                  <p><strong>En My Power, ofrecemos soluciones energéticas naturales y saludables que te permiten estar al 100% durante todo el día.</strong></p>
+              </div>
+      
+              <!-- Sección de Redes Sociales -->
+              <div class="footer-social">
+                  <h3>Síguenos</h3>
+                  <div class="social-icons">
+                      <a href="https://www.facebook.com/?locale=es_ES" class="social-icon facebook"><img src="icons8-facebook-48.png" alt="facebook"><i class="fab fa-facebook-f"></i></a>
+                      <a href="https://x.com/?lang=es" class="social-icon twitter"><img src="icons8-instagram-48.png" alt="instagram"><i class="fab fa-twitter"></i></a>
+                      <a href="https://www.instagram.com/" class="social-icon instagram"><img src="icons8-twitterx-48.png" alt="twitter"><i class="fab fa-instagram"></i></a>
+                      <a href="https://www.youtube.com/" class="social-icon youtube"><img src="icons8-youtube-play-48.png" alt="icons8-youtube-play-48"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+      
+              <!-- Sección de Contacto -->
+              <div class="footer-contact">
+                  <h3>Contacto</h3>
+                  <p><strong>Email: davi308@vidalibarraquer.net</strong></p>
+                  <p><strong>Teléfono: +34 654 321 654</strong></p>
+                  <p><strong>Dirección: Calle Ficticia 123, Tarragona, España</strong></p>
+              </div>
+          </div>
+      </div>
+      
+          <!-- Copyright -->
+      <div class="footer-bottom">
+              <p>&copy; 2024 My Power. Todos los derechos reservados.</p>
+      </div>
+      </footer>
 
 </body>
 </html>
