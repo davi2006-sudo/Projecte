@@ -47,33 +47,48 @@
         </nav>
       </div>
 
-<div class="contacto">
+      <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2>¿COMO PODEMOS AYUDARTE?</h2>
+                <p>¡Contáctanos y te responderemos lo antes posible!</p>
+            </div>
+            <form class="contact-form">
+                <div class="input-group">
+                    <input type="text" id="name" name="name" placeholder=" " required>
+                    <label for="name">Nombre</label>
+                </div>
 
-    <h1>CONTACTO</h1><br>
+                <div class="input-group">
+                    <input type="email" id="email" name="email" placeholder=" " required>
+                    <label for="email">Correo Electrónico</label>
+                </div>
 
-    <form action="">
+                <div class="input-group">
+                    <select id="reason" name="reason" required>
+                        <option value="ninguno" disabled selected></option>
+                        <option value="consulta">Consulta</option>
+                        <option value="soporte">Soporte</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <label for="reason">Motivo</label>
+                </div>
 
-        <label for="nom">NOM:</label><br><br>
+                <div class="input-group">
+                    <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+                    <label for="message">Mensaje</label>
+                </div>
 
-        <input type="text"><br><br>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">Acepto la <a href="https://www.privacypolicies.com/live/0d92dd8f-bea7-4887-b0f7-87b843d149e1">Política de Privacidad</a></label>
+                </div>
 
-        <label for="email">E-MAIL</label><br><br>
-
-        <input type="text"><br><br>
-
-        <label for="motiu">MOTIU:</label><br><br>
-
-        <input type="text"><br><br>
-
-        <label>
-        <input  class="checkbox" type="checkbox" id="consentiment" name="consentiment" required>
-        He llegit i accepto la <a href="https://www.privacypolicies.com/live/0d92dd8f-bea7-4887-b0f7-87b843d149e1">política de privadesa</a>.
-        </label><br><br>
-        <button type="button" class="enviar">Enviar</button>
-
-    </form>
-
-</div>
+                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
 
 <footer class="footer">
 
