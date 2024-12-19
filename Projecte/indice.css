@@ -186,12 +186,12 @@ li{
     text-align: left;
     max-width: 50%;
 }
-.hero-content h1 {
+.hero-content h2 {
     font-size: 2.8rem;
     color: #ffffff;
     font-family: 'Archivo Black', sans-serif;
 }
-.hero-content h1 span {
+.hero-content h2 span {
     color: #ffee9c;
     font-family: 'Bakbak One', sans-serif;
   text-transform: uppercase;
