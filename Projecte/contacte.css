@@ -4,7 +4,6 @@ body {
   font-family: 'Lato', sans-serif;
   background-color: #f5e7a5;
 }
-
 /* Fondo y estilo del header */
 .barra {
   background-color: #0475B3;
@@ -16,19 +15,16 @@ body {
   width: 100%;
   margin: auto;
 }
-
 /* Contenedor del logo */
 .logo-container {
   display: flex;
   align-items: center;
 }
-
 .logo {
   width: 60px; /* Tamaño del logo */
   height: auto;
   margin-right: 10px;
 }
-
 /* Estilo para el texto del header */
 .logo-container h1 {
   font-size: 40px;
@@ -37,23 +33,18 @@ body {
   text-transform: uppercase;
   font-family: 'Bakbak One', sans-serif;
 }
-
 /* Estilos de la barra de navegación */
 .navbar ul {
   display: flex;
   list-style: none;
 }
-
 li{
   list-style: none;
-  display: inline;
-  
+  display: inline; 
 }
-
 .navbar li {
   margin: 0 20px;
 }
-
 .navbar a {
   text-decoration: none;
   color: #f9f1a0;
@@ -64,12 +55,10 @@ li{
   transition: color 0.3s ease;
   font-family: 'Archivo Black', sans-serif;
 }
-
 /* Efecto al pasar el mouse sobre los enlaces */
 .navbar a:hover {
   color: white;
 }
-
 /* Estilos responsivos */
 @media (max-width: 768px) {
   .barra {
@@ -77,62 +66,49 @@ li{
     align-items: center;
     padding: 10px;
   }
-
   .navbar ul {
     flex-direction: column;
     align-items: center;
   }
-
   .navbar li {
     margin: 10px 0;
   }
-
   .logo {
     width: 30px; /* Ajuste de tamaño en pantallas pequeñas */
   }
-
   header h1 {
     font-size: 20px;
   }
 }
-
 @media (max-width: 480px) {
   .barra {
     flex-direction: column;
     align-items: center;
     padding: 10px;
   }
-
   .navbar ul {
     flex-direction: column;
     align-items: center;
   }
-
   .navbar li {
     margin: 10px 0;
   }
-
   .logo {
     width: 30px; /* Ajuste de tamaño en pantallas pequeñas */
   }
-
   header h1 {
     font-size: 20px;
   }
 }
-
-
-
-
 /* Sección principal del formulario */
 .contact-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 20px;
-}
+  margin-top: 60px;
+  margin-bottom: 60px;
 
+}
 .contact-container {
   background: #ffffff;
   border-radius: 15px;
@@ -142,7 +118,17 @@ li{
   padding: 30px;
   text-align: center;
 }
-
+.mapa {
+  border-top: 2px solid black;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+iframe {
+  width: 100%;
+  height: 450px;
+}
 /* Encabezado */
 .contact-header h2 {
   font-family: 'Archivo Black', sans-serif;
@@ -150,20 +136,17 @@ li{
   font-size: 32px;
   margin-bottom: 10px;
 }
-
 .contact-header p {
   font-size: 16px;
   color: #666;
   margin-bottom: 30px;
 }
-
 /* Estilos de los inputs */
 .input-group {
   position: relative;
   margin-bottom: 25px;
   text-align: left;
 }
-
 .input-group input,.input-group textarea {
   width: 100%;
   padding: 10px;
@@ -173,7 +156,6 @@ li{
   outline: none;
   transition: border 0.3s, box-shadow 0.3s;
 }
-
 .input-group label {
   position: absolute;
   top: 12px;
@@ -184,26 +166,6 @@ li{
   transition: all 0.3s ease;
   pointer-events: none;
 }
-
-.input-group input:focus,
-.input-group textarea:focus {
-  border-color: #0475B3;
-  box-shadow: 0 0 8px rgba(4, 117, 179, 0.3);
-}
-
-.input-group input:focus + label,
-.input-group textarea:focus + label,
-.input-group input:not(:placeholder-shown) + label,
-.input-group textarea:not(:placeholder-shown) + label {
-  top: -8px;
-  left: 8px;
-  font-size: 12px;
-  color: #0475B3;
-  background: #fff;
-  padding: 0 5px;
-  border-radius: 20px;
-}
-
 /* Botón de envío */
 .submit-btn {
   display: inline-block;
@@ -218,12 +180,10 @@ li{
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
 }
-
 .submit-btn:hover {
   background-color: #035a85;
   transform: translateY(-3px);
 }
-
 .input-group select {
   width: 100%;
   padding: 10px;
@@ -239,12 +199,10 @@ li{
   cursor: pointer;
   transition: border 0.3s, box-shadow 0.3s;
 }
-
 .input-group select:focus {
   border-color: #0475B3;
   box-shadow: 0 0 8px rgba(4, 117, 179, 0.3);
 }
-
 /* Checkbox personalizado */
 .checkbox-group {
   display: flex;
@@ -253,45 +211,37 @@ li{
   font-size: 14px;
   color: #333;
 }
-
 .checkbox-group input {
   margin-right: 10px;
   accent-color: #0475B3; /* Color del checkbox */
   width: 18px;
   height: 18px;
 }
-
 .checkbox-group label a {
   color: #0475B3;
   text-decoration: none;
   font-weight: bold;
 }
-
 .checkbox-group label a:hover {
   text-decoration: underline;
 }
-
 /* Responsividad */
 @media (max-width: 768px) {
   .contact-header h2 {
       font-size: 28px;
   }
-
   .contact-container {
       padding: 20px;
   }
 }
-
 @media (max-width: 480px) {
   .contact-header h2 {
       font-size: 24px;
   }
-
   .submit-btn {
       font-size: 14px;
   }
 }
-
 /* Estilos generales del footer */
 footer {
   background-color: #0475B3; /* Fondo oscuro elegante */
@@ -301,13 +251,11 @@ footer {
   position: relative;
   z-index: 10;
 }
-
 .hola {
 
   padding: 60px 20px;
 
 }
-
 /* Contenedor principal del footer */
 .footer-container {
   display: flex;
@@ -315,14 +263,12 @@ footer {
   gap: 40px;
   flex-wrap: wrap;
 }
-
 /* Estilo para cada sección */
 .footer-about, .footer-social, .footer-contact {
   flex: 1;
   min-width: 250px;
   margin-bottom: 30px;
 }
-
 /* Títulos de las secciones */
 .footer-social h3, .footer-contact h3 {
   font-size: 1.5rem;
@@ -332,7 +278,6 @@ footer {
   letter-spacing: 1px;
   font-family: 'Archivo Black',sans-serif;
 }
-
 /* Descripción en About y Contacto */
 .footer-about p, .footer-contact p {
   margin-top: 10px;
@@ -348,24 +293,15 @@ footer {
   margin-top: 10px;
 }
 .footer-social h3{
-
 text-align: center;
-
 }
-
 .social-icons {
-
 margin: auto !important;
 justify-content: center;
-
 }
-
 .footer-social {
-
   margin: 0px auto;
-
 }
-
 .social-icon {
   font-size: 1.8rem;
   color: #fff;
@@ -377,13 +313,11 @@ justify-content: center;
   display: inline-block;
   text-align: center;
 }
-
 .social-icon:hover {
   transform: scale(1.2); /* Efecto de zoom */
   background-color: #f5e7a5; /* Fondo amarillo dorado */
   color: #111; /* Cambio de color del icono */
 }
-
 /* Estilo para el pie de página (copyright) */
 .footer-bottom {
   background-color: #222;
@@ -394,17 +328,18 @@ justify-content: center;
   height: auto;
   margin-bottom: 0%;
 }
-
 /* Responsividad para pantallas pequeñas */
 @media (max-width: 768px) {
   .footer-container {
       flex-direction: column;
       align-items: center;
   }
-
   .footer-about, .footer-social, .footer-contact {
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
   }
 }

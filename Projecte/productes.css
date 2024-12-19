@@ -4,7 +4,6 @@ body {
   font-family: 'Lato', sans-serif;
   background-color: #f5e7a5;
 }
-
 /* Fondo y estilo del header */
 .barra {
   background-color: #0475B3;
@@ -16,19 +15,16 @@ body {
   width: 100%;
   margin: auto;
 }
-
 /* Contenedor del logo */
 .logo-container {
   display: flex;
   align-items: center;
 }
-
 .logo {
   width: 60px; /* Tamaño del logo */
   height: auto;
   margin-right: 10px;
 }
-
 /* Estilo para el texto del header */
 .logo-container h1 {
   font-size: 40px;
@@ -37,23 +33,18 @@ body {
   text-transform: uppercase;
   font-family: 'Bakbak One', sans-serif;
 }
-
 /* Estilos de la barra de navegación */
 .navbar ul {
   display: flex;
   list-style: none;
 }
-
 li{
   list-style: none;
   display: inline;
-  
 }
-
 .navbar li {
   margin: 0 20px;
 }
-
 .navbar a {
   text-decoration: none;
   color: #f9f1a0;
@@ -64,12 +55,10 @@ li{
   transition: color 0.3s ease;
   font-family: 'Archivo Black', sans-serif;
 }
-
 /* Efecto al pasar el mouse sobre los enlaces */
 .navbar a:hover {
   color: white;
 }
-
 /* Estilos responsivos */
 @media (max-width: 768px) {
   .barra {
@@ -77,50 +66,40 @@ li{
     align-items: center;
     padding: 10px;
   }
-
   .navbar ul {
     flex-direction: column;
     align-items: center;
   }
-
   .navbar li {
     margin: 10px 0;
   }
-
   .logo {
     width: 30px; /* Ajuste de tamaño en pantallas pequeñas */
   }
-
   header h1 {
     font-size: 20px;
   }
 }
-
 @media (max-width: 480px) {
   .barra {
     flex-direction: column;
     align-items: center;
     padding: 10px;
   }
-
   .navbar ul {
     flex-direction: column;
     align-items: center;
   }
-
   .navbar li {
     margin: 10px 0;
   }
-
   .logo {
     width: 30px; /* Ajuste de tamaño en pantallas pequeñas */
   }
-
   header h1 {
     font-size: 20px;
   }
 }
-
 .titulos {
   background-color: #0475B3;
   border-radius: 20px;
@@ -134,7 +113,6 @@ li{
   align-items: center; /* Centrar verticalmente el contenido */
   position: relative;
 }
-
 .titulos h2 {
   font-family: 'Archivo Black', sans-serif;
   text-align: center;
@@ -142,7 +120,6 @@ li{
   margin: 0;
   color: #ffffff;
 }
-
 /* Media Query para tablets y pantallas medianas */
 @media (max-width: 768px) {
   .titulos {
@@ -153,7 +130,6 @@ li{
       font-size: 30px; /* Reducir el tamaño de la fuente */
   }
 }
-
 /* Media Query para móviles pequeños */
 @media (max-width: 480px) {
   .titulos {
@@ -180,7 +156,6 @@ li{
     height: 40px;               /* Tamaño más grande */
     border-radius: 50%;         /* Hacerlo redondeado */
   }
-  
   /* Cambiar el color y aumentar el tamaño del icono de "siguiente" */
   .carousel-control-next-icon {
     background-color: #FFEC89;  /* Color verde */
@@ -194,7 +169,6 @@ li{
     padding: 20px;
     flex-wrap: wrap; /* Permite que las tarjetas se ajusten en pantallas pequeñas */
   }
-  
   .product-card {
     background-color: white;
     border-radius: 10px;
@@ -206,18 +180,15 @@ li{
     margin-bottom: 20px;
     margin: 10px;
   }
-  
   .product-card:hover {
     transform: scale(1.05);
   }
-  
   .product-card img {
     width: 100%;
     height: auto;
     border-radius: 10px;
     margin-bottom: 15px;
   }
-  
   .product-card h3 {
     font-size: 20px;
     color: #2c3e50;
@@ -225,14 +196,12 @@ li{
     font-weight: bold;
     text-transform: uppercase;
   }
-  
   .product-card p {
     font-size: 16px;
     color: #3498db;
     font-weight: bold;
     margin-bottom: 10px;
   }
-  
   .product-card .divider {
     content: '';
     display: block;
@@ -242,74 +211,45 @@ li{
     background: #f39c12;
     margin-bottom: 10px;
   }
-  
   /* Ajustes responsivos */
   @media (max-width: 1024px) {
     .container {
       justify-content: space-between;
     }
-  
     .product-card {
       width: 200px;
     }
   }
-  
   @media (max-width: 768px) {
     .container {
       flex-direction: column;
       align-items: center;
     }
-  
     .product-card {
       width: 100%;
       max-width: 300px;
       margin-bottom: 20px; /* Agrega un margen entre tarjetas */
     }
-  
     body {
       padding: 20px;
     }
   }
-  
   @media (max-width: 480px) {
     .product-card {
       width: 100%;
       max-width: 250px; /* Se ajusta el tamaño máximo de la tarjeta */
       margin-bottom: 20px; /* Se agrega espacio entre las tarjetas */
     }
-  
     .product-card h3 {
       font-size: 18px; /* Texto más pequeño para pantallas pequeñas */
     }
-  
     .product-card p {
       font-size: 14px; /* Descripción más pequeña */
     }
-  
     .product-card img {
       max-height: 300px; /* Limita la altura de la imagen en móviles */
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Estilos generales del footer */
 footer {
   background-color: #0475B3; /* Fondo oscuro elegante */
@@ -319,13 +259,9 @@ footer {
   position: relative;
   z-index: 10;
 }
-
 .hola {
-
   padding: 60px 20px;
-
 }
-
 /* Contenedor principal del footer */
 .footer-container {
   display: flex;
@@ -333,14 +269,12 @@ footer {
   gap: 40px;
   flex-wrap: wrap;
 }
-
 /* Estilo para cada sección */
 .footer-about, .footer-social, .footer-contact {
   flex: 1;
   min-width: 250px;
   margin-bottom: 30px;
 }
-
 /* Títulos de las secciones */
 .footer-social h3, .footer-contact h3 {
   font-size: 1.5rem;
@@ -350,7 +284,6 @@ footer {
   letter-spacing: 1px;
   font-family: 'Archivo Black',sans-serif;
 }
-
 /* Descripción en About y Contacto */
 .footer-about p, .footer-contact p {
   margin-top: 10px;
@@ -366,24 +299,15 @@ footer {
   margin-top: 10px;
 }
 .footer-social h3{
-
 text-align: center;
-
 }
-
 .social-icons {
-
 margin: auto !important;
 justify-content: center;
-
 }
-
 .footer-social {
-
-  margin: 0px auto;
-
+margin: 0px auto;
 }
-
 .social-icon {
   font-size: 1.8rem;
   color: #fff;
@@ -395,13 +319,11 @@ justify-content: center;
   display: inline-block;
   text-align: center;
 }
-
 .social-icon:hover {
   transform: scale(1.2); /* Efecto de zoom */
   background-color: #f5e7a5; /* Fondo amarillo dorado */
   color: #111; /* Cambio de color del icono */
 }
-
 /* Estilo para el pie de página (copyright) */
 .footer-bottom {
   background-color: #222;
@@ -412,17 +334,18 @@ justify-content: center;
   height: auto;
   margin-bottom: 0%;
 }
-
 /* Responsividad para pantallas pequeñas */
 @media (max-width: 768px) {
   .footer-container {
       flex-direction: column;
       align-items: center;
   }
-
   .footer-about, .footer-social, .footer-contact {
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
   }
 }
