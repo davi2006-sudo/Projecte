@@ -491,3 +491,7 @@ justify-content: center;
       #cookie-banner button:hover {
         background-color: #FFEC89;
       }
+      .carousel-container {
+      max-width: 100%; /* Ajusta el ancho del carousel */
+       margin: auto;
+    }
