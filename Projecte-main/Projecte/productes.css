@@ -1,0 +1,351 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: #f5e7a5;
+}
+/* Fondo y estilo del header */
+.barra {
+  background-color: #0475B3;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  width: 100%;
+  margin: auto;
+}
+/* Contenedor del logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 60px; /* Tamaño del logo */
+  height: auto;
+  margin-right: 10px;
+}
+/* Estilo para el texto del header */
+.logo-container h1 {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Bakbak One', sans-serif;
+}
+/* Estilos de la barra de navegación */
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+li{
+  list-style: none;
+  display: inline;
+}
+.navbar li {
+  margin: 0 20px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #f9f1a0;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+  font-family: 'Archivo Black', sans-serif;
+}
+/* Efecto al pasar el mouse sobre los enlaces */
+.navbar a:hover {
+  color: white;
+}
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .barra {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar li {
+    margin: 10px 0;
+  }
+  .logo {
+    width: 30px; /* Ajuste de tamaño en pantallas pequeñas */
+  }
+  header h1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .barra {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar li {
+    margin: 10px 0;
+  }
+  .logo {
+    width: 30px; /* Ajuste de tamaño en pantallas pequeñas */
+  }
+  header h1 {
+    font-size: 20px;
+  }
+}
+.titulos {
+  background-color: #0475B3;
+  border-radius: 20px;
+  margin: 60px auto; /* Centrar horizontalmente y agregar margen vertical */
+  padding: 20px; /* Espaciado interno */
+  max-width: 90%; /* Limitar el ancho para que sea responsivo */
+  width: 450px; /* Ancho máximo */
+  height: 120px; /* Altura fija */
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente el contenido */
+  align-items: center; /* Centrar verticalmente el contenido */
+  position: relative;
+}
+.titulos h2 {
+  font-family: 'Archivo Black', sans-serif;
+  text-align: center;
+  font-size: 40px; /* Tamaño por defecto */
+  margin: 0;
+  color: #ffffff;
+}
+/* Media Query para tablets y pantallas medianas */
+@media (max-width: 768px) {
+  .titulos {
+      height: 100px; /* Reducir la altura */
+      padding: 15px; /* Menor espaciado interno */
+  }
+  .titulos h2 {
+      font-size: 30px; /* Reducir el tamaño de la fuente */
+  }
+}
+/* Media Query para móviles pequeños */
+@media (max-width: 480px) {
+  .titulos {
+      height: auto; /* Dejar la altura flexible */
+      padding: 10px; /* Menor espaciado interno */
+      border-radius: 15px; /* Ajustar bordes */
+  }
+  .titulos h2 {
+      font-size: 24px; /* Reducir más el tamaño de la fuente */
+  }
+}
+.maximo{
+  background-color: #58aae0;
+  width: 95%;
+  margin: auto;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+/* Cambiar el color y aumentar el tamaño del icono de "anterior" */
+.carousel-control-prev-icon {
+    background-color: #0475B3;  /* Color naranja */
+    width: 50px;                /* Tamaño más grande */
+    height: 40px;               /* Tamaño más grande */
+    border-radius: 50%;         /* Hacerlo redondeado */
+  }
+  /* Cambiar el color y aumentar el tamaño del icono de "siguiente" */
+  .carousel-control-next-icon {
+    background-color: #FFEC89;  /* Color verde */
+    width: 50px;                /* Tamaño más grande */
+    height: 40px;               /* Tamaño más grande */
+    border-radius: 50%;         /* Hacerlo redondeado */
+  }  .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten en pantallas pequeñas */
+  }
+  .product-card {
+    background-color: white;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+    margin: 10px;
+  }
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  .product-card h3 {
+    font-size: 20px;
+    color: #2c3e50;
+    margin: 10px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .product-card p {
+    font-size: 16px;
+    color: #3498db;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .product-card .divider {
+    content: '';
+    display: block;
+    margin-top: 10px;
+    height: 3px;
+    width: 50%;
+    background: #f39c12;
+    margin-bottom: 10px;
+  }
+  /* Ajustes responsivos */
+  @media (max-width: 1024px) {
+    .container {
+      justify-content: space-between;
+    }
+    .product-card {
+      width: 200px;
+    }
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .product-card {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 20px; /* Agrega un margen entre tarjetas */
+    }
+    body {
+      padding: 20px;
+    }
+  }
+  @media (max-width: 480px) {
+    .product-card {
+      width: 100%;
+      max-width: 250px; /* Se ajusta el tamaño máximo de la tarjeta */
+      margin-bottom: 20px; /* Se agrega espacio entre las tarjetas */
+    }
+    .product-card h3 {
+      font-size: 18px; /* Texto más pequeño para pantallas pequeñas */
+    }
+    .product-card p {
+      font-size: 14px; /* Descripción más pequeña */
+    }
+    .product-card img {
+      max-height: 300px; /* Limita la altura de la imagen en móviles */
+    }
+  }
+/* Estilos generales del footer */
+footer {
+  background-color: #0475B3; /* Fondo oscuro elegante */
+  color: white;
+  font-family: 'Lato', sans-serif;
+  text-align: left;
+  position: relative;
+  z-index: 10;
+}
+.hola {
+  padding: 60px 20px;
+}
+/* Contenedor principal del footer */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+/* Estilo para cada sección */
+.footer-about, .footer-social, .footer-contact {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 30px;
+}
+/* Títulos de las secciones */
+.footer-social h3, .footer-contact h3 {
+  font-size: 1.5rem;
+  color: #ffe875; /* Un color dorado atractivo */
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Archivo Black',sans-serif;
+}
+/* Descripción en About y Contacto */
+.footer-about p, .footer-contact p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #ffffff;
+  font-family: 'Lato',sans-serif;
+  line-height: 1.6;
+}
+/* Estilo para los iconos sociales */
+.footer-social .social-icons {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+.footer-social h3{
+text-align: center;
+}
+.social-icons {
+margin: auto !important;
+justify-content: center;
+}
+.footer-social {
+margin: 0px auto;
+}
+.social-icon {
+  font-size: 1.8rem;
+  color: #fff;
+  height: auto;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+.social-icon:hover {
+  transform: scale(1.2); /* Efecto de zoom */
+  background-color: #f5e7a5; /* Fondo amarillo dorado */
+  color: #111; /* Cambio de color del icono */
+}
+/* Estilo para el pie de página (copyright) */
+.footer-bottom {
+  background-color: #222;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #bbb;
+  height: auto;
+  margin-bottom: 0%;
+}
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+  .footer-about, .footer-social, .footer-contact {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+}
